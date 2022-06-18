@@ -1,0 +1,123 @@
+@import "reset.css";
+
+:root {
+  --bg-color-1: #fd0130;
+  --bg-color-2: rgb(133, 252, 97);
+  --bg-color-3: #1c1c1c;
+  --fonts: "Rift", sans-serif;
+}
+
+html {
+  background: url(img/mesh.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: var(--fonts);
+  font-weight: bold;
+}
+
+.block-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 100vh;
+  overflow: hidden;
+  filter: hue-rotate(6deg);
+}
+
+.block-inner {
+  width: 600px;
+  min-width: 400px;
+  height: 400px;
+  background: url(img/image-7qmqakap\ 1.svg) no-repeat;
+  filter: drop-shadow(5px 5px 14px var(--bg-color-2));
+  margin: 0 10px;
+}
+
+fieldset {
+  position: absolute;
+  top: -15px;
+  margin-left: 30px;
+  width: 300px;
+}
+
+.block-img {
+  position: absolute;
+  bottom: -14px;
+  right: -110px;
+  width: 400px;
+  height: 600px;
+  float: right;
+}
+
+.block-legend {
+  background-color: var(--bg-color-3);
+  border-right: 2px solid var(--bg-color-1);
+  color: whitesmoke;
+  padding: 10px 10px;
+  margin-bottom: 40px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+input {
+  border-bottom: 1px solid var(--bg-color-3);
+  margin-bottom: 20px;
+  width: 250px;
+  font-size: 1.2rem;
+}
+
+input[placeholder="email"] {
+  color: var(--bg-color-3);
+}
+
+input:invalid {
+  border-color: var(--bg-color-1);
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 20px 30px;
+}
+
+button {
+  font-size: 1.4rem;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  padding: 0.35em 1.2em;
+  background-color: var(--bg-color-1);
+  border-right: 2px solid var(--bg-color-2);
+  transition: all 0.2s;
+}
+
+button:hover {
+  cursor: pointer;
+  color: var(--bg-color-3);
+  background-color: var(--bg-color-2);
+}
+
+@media screen and (max-width: 666px) {
+  .block-inner {
+    width: 400px;
+    height: 400px;
+  }
+  .block-img {
+    width: 330px;
+    top: -84px;
+    right: -160px;
+  }
+}
+
+#username {
+  display: none;
+}
+
+
